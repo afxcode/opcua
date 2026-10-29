@@ -47,6 +47,19 @@ func (m *SessionManager) Get(authenticationToken ua.NodeID) (*Session, bool) {
 	return nil, false
 }
 
+// List all sessions
+func (m *SessionManager) List() []*Session {
+	m.RLock()
+	defer m.RUnlock()
+
+	sessions := make([]*Session, 0, len(m.sessionsByToken))
+	for _, session := range m.sessionsByToken {
+		sessions = append(sessions, session)
+	}
+
+	return sessions
+}
+
 // Add a session to the server.
 func (m *SessionManager) Add(s *Session) error {
 	m.Lock()
