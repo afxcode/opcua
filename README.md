@@ -26,5 +26,12 @@ BenchmarkAwcullenEncode-4   	 1728259	       859.3 ns/op	     154 B/op	       4 
 PASS
 ```
 
+## Acknowledgements
+
+This project is a fork of [awcullen/opcua](https://github.com/awcullen/opcua), originally developed by Converter Systems LLC and contributors.
+
+This fork is maintained by [afxcode](https://github.com/afxcode) and includes additional modifications and improvements.
+
+The original project is distributed under the MIT License. The original copyright and license notices are preserved in the `LICENSE` file.
 
  [1]: robot6.jpg
