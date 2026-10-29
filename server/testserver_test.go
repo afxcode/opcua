@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/awcullen/opcua/server"
-	"github.com/awcullen/opcua/ua"
+	"github.com/afxcode/opcua/server"
+	"github.com/afxcode/opcua/ua"
 	"golang.org/x/crypto/bcrypt"
 )
 
@@ -39,7 +39,7 @@ func NewTestServer() (*server.Server, error) {
 	srv, err := server.New(
 		ua.ApplicationDescription{
 			ApplicationURI: fmt.Sprintf("urn:%s:testserver", host),
-			ProductURI:     "http://github.com/awcullen/opcua",
+			ProductURI:     "http://github.com/afxcode/opcua",
 			ApplicationName: ua.LocalizedText{
 				Text:   fmt.Sprintf("testserver@%s", host),
 				Locale: "en",
@@ -54,7 +54,7 @@ func NewTestServer() (*server.Server, error) {
 		fmt.Sprintf("opc.tcp://%s:%d", host, port),
 		server.WithBuildInfo(
 			ua.BuildInfo{
-				ProductURI:       "http://github.com/awcullen/opcua",
+				ProductURI:       "http://github.com/afxcode/opcua",
 				ManufacturerName: "awcullen",
 				ProductName:      "testserver",
 				SoftwareVersion:  SoftwareVersion,

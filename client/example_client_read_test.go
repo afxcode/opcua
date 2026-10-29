@@ -6,8 +6,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/awcullen/opcua/client"
-	"github.com/awcullen/opcua/ua"
+	"github.com/afxcode/opcua/client"
+	"github.com/afxcode/opcua/ua"
 )
 
 // This example demonstrates reading the 'ServerStatus' variable.

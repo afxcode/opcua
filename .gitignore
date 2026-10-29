@@ -13,4 +13,5 @@ pki/
 pkiusers/
 *.exe
 .vscode/
+.idea
 dir2pem/

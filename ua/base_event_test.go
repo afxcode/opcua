@@ -4,8 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/awcullen/opcua/ua"
 	"github.com/pkg/errors"
+
+	"github.com/afxcode/opcua/ua"
 )
 
 func TestDeserializeBaseEvent(t *testing.T) {

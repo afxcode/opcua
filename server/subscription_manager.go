@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/awcullen/opcua/ua"
+	"github.com/afxcode/opcua/ua"
 	"github.com/google/uuid"
 )
 

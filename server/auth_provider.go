@@ -1,6 +1,6 @@
 package server
 
-import "github.com/awcullen/opcua/ua"
+import "github.com/afxcode/opcua/ua"
 
 // UserNameIdentityAuthenticator authenticates AnonymousIdentity.
 type AnonymousIdentityAuthenticator interface {

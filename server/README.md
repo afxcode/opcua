@@ -1,4 +1,4 @@
-# server - [![Godoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://pkg.go.dev/mod/github.com/awcullen/opcua/server) [![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://raw.githubusercontent.com/awcullen/opcua/master/LICENSE)
+# server - [![Godoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://pkg.go.dev/mod/github.com/afxcode/opcua/server) [![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://raw.githubusercontent.com/awcullen/opcua/master/LICENSE)
 Publish data to the OPC UA clients in your network.
 
 With this package, you can create a server of the OPC Unified Architecture, see https://reference.opcfoundation.org/v104/Core/docs/Part4/
@@ -19,8 +19,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/awcullen/opcua/server"
-	"github.com/awcullen/opcua/ua"
+	"github.com/afxcode/opcua/server"
+	"github.com/afxcode/opcua/ua"
 )
 
 func main() {
@@ -40,7 +40,7 @@ func main() {
 	srv, err := server.New(
 		ua.ApplicationDescription{
 			ApplicationURI: fmt.Sprintf("urn:%s:testserver", host),
-			ProductURI:     "http://github.com/awcullen/opcua",
+			ProductURI:     "http://github.com/afxcode/opcua",
 			ApplicationName: ua.LocalizedText{
 				Text:   fmt.Sprintf("testserver@%s", host),
 				Locale: "en",
@@ -55,7 +55,7 @@ func main() {
 		endpointURL,
 		server.WithBuildInfo(
 			ua.BuildInfo{
-				ProductURI:       "http://github.com/awcullen/opcua",
+				ProductURI:       "http://github.com/afxcode/opcua",
 				ManufacturerName: "awcullen",
 				ProductName:      "testserver",
 				SoftwareVersion:  "0.3.0",

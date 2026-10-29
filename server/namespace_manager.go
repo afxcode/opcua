@@ -15,7 +15,7 @@ import (
 
 	"slices"
 
-	"github.com/awcullen/opcua/ua"
+	"github.com/afxcode/opcua/ua"
 	"github.com/gammazero/deque"
 	"github.com/google/uuid"
 )

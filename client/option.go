@@ -7,7 +7,7 @@ import (
 	"crypto/rsa"
 	"crypto/tls"
 
-	"github.com/awcullen/opcua/ua"
+	"github.com/afxcode/opcua/ua"
 )
 
 // Option is a functional option to be applied to a client during initialization.

@@ -6,13 +6,14 @@ import (
 	"testing"
 	"time"
 
-	awcullen "github.com/awcullen/opcua/ua"
 	gopcua "github.com/gopcua/opcua/ua"
+
+	awcullen "github.com/afxcode/opcua/ua"
 )
 
 /*
 run file benchmarks, results similar to:
-pkg: github.com/awcullen/opcua/cmd/benchmark
+pkg: github.com/afxcode/opcua/cmd/benchmark
 cpu: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
 BenchmarkGopcuaEncode
 BenchmarkGopcuaEncode-4     	  120178	      9332 ns/op	    2536 B/op	      97 allocs/op

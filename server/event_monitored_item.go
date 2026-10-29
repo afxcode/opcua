@@ -8,7 +8,7 @@ import (
 
 	"sync"
 
-	"github.com/awcullen/opcua/ua"
+	"github.com/afxcode/opcua/ua"
 	deque "github.com/gammazero/deque"
 )
 

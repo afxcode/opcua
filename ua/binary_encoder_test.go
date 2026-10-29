@@ -7,9 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/awcullen/opcua/ua"
 	"github.com/google/uuid"
 	"gotest.tools/assert"
+
+	"github.com/afxcode/opcua/ua"
 )
 
 func TestBoolean(t *testing.T) {

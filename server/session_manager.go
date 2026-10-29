@@ -5,8 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/awcullen/opcua/ua"
 	"github.com/google/uuid"
+
+	"github.com/afxcode/opcua/ua"
 )
 
 // SessionManager manages the sessions for a server.

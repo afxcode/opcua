@@ -2,7 +2,7 @@
 
 package server
 
-import "github.com/awcullen/opcua/ua"
+import "github.com/afxcode/opcua/ua"
 
 // Option is a functional option to be applied to a server during initialization.
 type Option func(*Server) error

@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/awcullen/opcua/ua"
+	"github.com/afxcode/opcua/ua"
 )
 
 type VariableNode struct {

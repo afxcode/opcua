@@ -16,8 +16,9 @@ import (
 	"os"
 	"sort"
 
-	"github.com/awcullen/opcua/ua"
 	"github.com/djherbis/buffer"
+
+	"github.com/afxcode/opcua/ua"
 )
 
 var (

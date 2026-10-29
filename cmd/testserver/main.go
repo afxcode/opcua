@@ -16,6 +16,7 @@ import (
 	"math/big"
 	"net"
 	"net/http"
+	_ "net/http/pprof"
 	"net/url"
 	"os"
 	"os/signal"
@@ -23,12 +24,11 @@ import (
 	"syscall"
 	"time"
 
-	_ "net/http/pprof"
-
-	"github.com/awcullen/opcua/server"
-	"github.com/awcullen/opcua/ua"
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/bcrypt"
+
+	"github.com/afxcode/opcua/server"
+	"github.com/afxcode/opcua/ua"
 )
 
 var (
@@ -46,7 +46,7 @@ type CustomStruct struct {
 }
 
 func init() {
-	ua.RegisterBinaryEncodingID(reflect.TypeOf(CustomStruct{}), ua.ParseExpandedNodeID("nsu=http://github.com/awcullen/opcua/testserver/;i=12"))
+	ua.RegisterBinaryEncodingID(reflect.TypeOf(CustomStruct{}), ua.ParseExpandedNodeID("nsu=http://github.com/afxcode/opcua/testserver/;i=12"))
 }
 
 func main() {
@@ -79,7 +79,7 @@ func main() {
 	srv, err := server.New(
 		ua.ApplicationDescription{
 			ApplicationURI: fmt.Sprintf("urn:%s:testserver", host),
-			ProductURI:     "http://github.com/awcullen/opcua",
+			ProductURI:     "http://github.com/afxcode/opcua",
 			ApplicationName: ua.LocalizedText{
 				Text:   fmt.Sprintf("testserver@%s", host),
 				Locale: "en",
@@ -94,7 +94,7 @@ func main() {
 		endpointURL,
 		server.WithBuildInfo(
 			ua.BuildInfo{
-				ProductURI:       "http://github.com/awcullen/opcua",
+				ProductURI:       "http://github.com/afxcode/opcua",
 				ManufacturerName: "awcullen",
 				ProductName:      "testserver",
 				SoftwareVersion:  SoftwareVersion,

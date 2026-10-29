@@ -5,7 +5,7 @@ package server
 import (
 	"testing"
 
-	"github.com/awcullen/opcua/ua"
+	"github.com/afxcode/opcua/ua"
 )
 
 // Helper function to create a minimal test server
@@ -13,7 +13,7 @@ func createTestServer(t *testing.T) *Server {
 	srv, err := New(
 		ua.ApplicationDescription{
 			ApplicationURI: "urn:testhost:testserver",
-			ProductURI:     "http://github.com/awcullen/opcua",
+			ProductURI:     "http://github.com/afxcode/opcua",
 			ApplicationName: ua.LocalizedText{
 				Text:   "testserver@testhost",
 				Locale: "en",

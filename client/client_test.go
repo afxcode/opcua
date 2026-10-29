@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/awcullen/opcua/client"
-	"github.com/awcullen/opcua/ua"
+	"github.com/afxcode/opcua/client"
+	"github.com/afxcode/opcua/ua"
 
 	"github.com/pkg/errors"
 )
